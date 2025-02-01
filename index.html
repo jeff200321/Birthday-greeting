@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 400px;
+        }
+        h1 {
+            color: #ff6f91;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #333;
+            font-size: 1.2em;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6f91;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff4b7d;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Happy Birthday!</h1>
+        <p>Wishing you a day filled with love, joy, and all your favorite things. Have a fantastic birthday!</p>
+        <button class="btn" onclick="playMusic()">Play Birthday Song</button>
+    </div>
+
+    <audio id="birthdaySong">
+        <source src="https://www.bensound.com/bensound-music/bensound-happyrock.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playMusic() {
+            document.getElementById('birthdaySong').play();
+        }
+    </script>
+</body>
+</html>
